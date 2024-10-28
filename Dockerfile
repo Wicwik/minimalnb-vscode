@@ -34,4 +34,4 @@ RUN apt-get install git-lfs
 
 RUN git lfs install
 
-# USER jovyan
+USER jovyan
