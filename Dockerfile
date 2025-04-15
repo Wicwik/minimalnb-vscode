@@ -1,4 +1,4 @@
-FROM cerit.io/hubs/minimalnb:27-09-2024-ai
+FROM cerit.io/hubs/minimalnb:11-04-2025-intelligence-ai
 
 USER root
 
@@ -13,7 +13,7 @@ RUN rm -f packages.microsoft.gpg
 RUN chmod 1777 /tmp
 
 RUN apt-get install -y apt-transport-https
-RUN apt-get update
+RUN apt-get update && apt-get upgrade -y
 RUN apt-get install code -y
 
 RUN apt-get update && apt-get install -y \
